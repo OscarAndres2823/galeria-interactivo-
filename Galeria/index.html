@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Fotos Completa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Galería de Fotos Completa</h1>
+    <button id="darkModeToggle">Modo Oscuro</button>
+    <audio id="backgroundMusic" loop>
+      <source src="music/bensound-stellarcatharsis.mp3" type="audio/mp3">
+    </audio>
+    <button id="musicToggle">Reproducir Música</button>
+  </header>
+  
+  <div class="filters">
+    <button data-filter="all">Todas</button>
+    <button data-filter="paisajes">Paisajes</button>
+    <button data-filter="ciudades">Ciudades</button>
+  </div>
+  
+  <main>
+    <div class="gallery">
+      <div class="gallery-item" data-category="paisajes">
+        <img src="img/1.jpeg" alt="Perros" loading="lazy">
+        <p class="caption">Perros</p>
+      </div>
+      <div class="gallery-item" data-category="paisajes">
+        <img src="img/3.jpeg" alt="Perros" loading="lazy">
+        <p class="caption">Perros</p>
+      </div>
+      <div class="gallery-item" data-category="ciudades">
+        <img src="img/3.jpeg" alt="perros" loading="lazy">
+        <p class="caption">Perros</p>
+      </div>
+      <div class="gallery-item" data-category="paisajes">
+        <img src="img/3.jpeg" alt="Perros" loading="lazy">
+        <p class="caption">Perros</p>
+      </div>
+      <div class="gallery-item" data-category="ciudades">
+        <img src="img/1.jpeg" alt="Perros" loading="lazy">
+        <p class="caption">perros</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <p class="lightbox-counter" id="lightboxCounter"></p>
+    <button class="nav prev">&lt;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-image" id="lightboxImage" alt="Imagen ampliada">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button class="nav next">&gt;</button>
+    <span class="close">&times;</span>
+    <div class="share-buttons">
+      <a href="#" id="shareFacebook" target="_blank">Compartir en Facebook</a>
+      <a href="#" id="shareTwitter" target="_blank">Compartir en Twitter</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
